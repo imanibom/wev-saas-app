@@ -4,6 +4,7 @@
   "description": "- **Backend**: Node.js with Express\r   - Handles APIs and scheduled tasks (CRON jobs via node-cron)\r - **Database**: PostgreSQL\r   - Reliable for relational data (customers linked to purchase history)\r - **Messaging Engine**: Twilio\r   - For SMS/WhatsApp integration\r - **Environment Management**: dotenv\r   - For secure configuration",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
