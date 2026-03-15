@@ -43,11 +43,11 @@ if page == "Start Journey":
         cur = conn.cursor()
 
         # Get clients
-        cur.execute("SELECT id, name, type FROM clients ORDER BY name")
+        cur.execute("SELECT id, name, industry FROM clients ORDER BY name")
         clients = cur.fetchall()
 
         # Get journeys
-        cur.execute("SELECT id, name, trigger_event FROM journeys WHERE is_active = true ORDER BY name")
+        cur.execute("SELECT id, name, trigger_type FROM journeys WHERE is_active = true ORDER BY name")
         journeys = cur.fetchall()
 
         cur.close()
